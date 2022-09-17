@@ -8,7 +8,7 @@
 import SwiftUI
 
 // 画面サイズに関する定義
-struct frameSize{
+struct FrameSize{
     // 画面の横幅
     var width: CGFloat{
         UIScreen.main.bounds.width
@@ -20,6 +20,6 @@ struct frameSize{
 }
 
 // フォントサイズに関する定義
-struct fontSize {
+struct FontSize {
     
 }

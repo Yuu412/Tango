@@ -24,13 +24,6 @@ struct ContentView: View {
                 }
             
         }
-
-//        VStack {
-//            TopControlView()
-//            SummaryView()
-//            BottomControlView()
-//        }
-//        .padding()
     }
 }
 
@@ -40,14 +33,14 @@ struct SummaryView: View{
         VStack{
             
         }
-        .frame(width: frameSize().width, height: frameSize().height * 0.775)
+        .frame(width: FrameSize().width, height: FrameSize().height * 0.775)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .background(myColor.background)
+            .background(BackgroundColor.background)
             .environment(\.colorScheme, .dark)
     }
 }
