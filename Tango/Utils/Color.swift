@@ -7,10 +7,26 @@
 
 import SwiftUI
 
-struct myColor{
-    // 背景色
+struct BackgroundColor{
+    // 背景色（base）
     static let background = Color(UIColor.systemBackground)
     
-    // コンテナの背景色
-    static let containerBackground = Color("ContainerBackgroundColor")
+    // 背景色（dark）
+    static let darkBackground = Color("CardBackgroundColor")
+    
+    // 背景色（light）
+    static let lightBackground = Color("ButtonLightColor")
+    
+    // 背景色（blue）
+    static let blueBackground = Color.blue
+}
+
+struct TextColor {
+    // light
+    static let light = Color("LightTextColor")
+    
+    // dark
+    
+    // reverse
+    static let reverse = Color("ReverseTextColor")
 }
