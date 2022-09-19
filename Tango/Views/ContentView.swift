@@ -10,20 +10,20 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            HomeView()
+            HomeScreen()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-            AccountView()
+            AccountScreen()
                 .tabItem {
                     Label("Account", systemImage: "person.crop.circle.fill")
                 }
-            RegisterView()
+            RegisterScreen()
                 .tabItem {
                     Label("tango", systemImage: "textformat")
                 }
-            
         }
+        
     }
 }
 
@@ -41,6 +41,5 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .background(BackgroundColor.background)
-            .environment(\.colorScheme, .dark)
     }
 }
