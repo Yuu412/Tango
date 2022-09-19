@@ -7,20 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA21052A28D6BA9400DD2573 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21052928D6BA9400DD2573 /* ReviewView.swift */; };
+		CA21052C28D70A9D00DD2573 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA21052B28D70A9D00DD2573 /* GoogleService-Info.plist */; };
+		CA21052F28D70D7700DD2573 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CA21052E28D70D7700DD2573 /* FirebaseAnalytics */; };
+		CA21053128D70D7700DD2573 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA21053028D70D7700DD2573 /* FirebaseAnalyticsSwift */; };
+		CA21053328D71D5600DD2573 /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21053228D71D5600DD2573 /* ReviewViewModel.swift */; };
+		CA21053828D7240400DD2573 /* Tango.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21053728D7240400DD2573 /* Tango.swift */; };
+		CA21053B28D727F700DD2573 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CA21053A28D727F700DD2573 /* FirebaseFirestore */; };
+		CA21053D28D855B300DD2573 /* SwipeTangoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21053C28D855B300DD2573 /* SwipeTangoView.swift */; };
+		CA21053F28D891F300DD2573 /* ReviewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21053E28D891F300DD2573 /* ReviewScreen.swift */; };
+		CA21054128D8923600DD2573 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21054028D8923600DD2573 /* HomeScreen.swift */; };
+		CA21054328D8928300DD2573 /* AccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21054228D8928300DD2573 /* AccountScreen.swift */; };
+		CA21054528D892B400DD2573 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21054428D892B400DD2573 /* RegisterScreen.swift */; };
 		CA670CE728D5A14E00D848EB /* TangoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670CE628D5A14E00D848EB /* TangoApp.swift */; };
 		CA670CE928D5A14E00D848EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670CE828D5A14E00D848EB /* ContentView.swift */; };
 		CA670CEB28D5A14F00D848EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA670CEA28D5A14F00D848EB /* Assets.xcassets */; };
 		CA670CEE28D5A14F00D848EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA670CED28D5A14F00D848EB /* Preview Assets.xcassets */; };
 		CA670CFB28D5A6CE00D848EB /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670CFA28D5A6CE00D848EB /* Common.swift */; };
 		CA670CFF28D5ADBC00D848EB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670CFE28D5ADBC00D848EB /* Color.swift */; };
-		CA670D0228D5B98E00D848EB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670D0128D5B98E00D848EB /* HomeView.swift */; };
-		CA670D0728D5BA7D00D848EB /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670D0628D5BA7D00D848EB /* RegisterView.swift */; };
-		CA670D0928D5BA8700D848EB /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670D0828D5BA8700D848EB /* AccountView.swift */; };
 		CA670D0C28D5CAFD00D848EB /* fontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670D0B28D5CAFD00D848EB /* fontModifier.swift */; };
 		CA670D0E28D5D28A00D848EB /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670D0D28D5D28A00D848EB /* ViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA21052928D6BA9400DD2573 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		CA21052B28D70A9D00DD2573 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CA21053228D71D5600DD2573 /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
+		CA21053728D7240400DD2573 /* Tango.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tango.swift; sourceTree = "<group>"; };
+		CA21053C28D855B300DD2573 /* SwipeTangoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTangoView.swift; sourceTree = "<group>"; };
+		CA21053E28D891F300DD2573 /* ReviewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewScreen.swift; sourceTree = "<group>"; };
+		CA21054028D8923600DD2573 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		CA21054228D8928300DD2573 /* AccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreen.swift; sourceTree = "<group>"; };
+		CA21054428D892B400DD2573 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		CA670CE328D5A14E00D848EB /* Tango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tango.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA670CE628D5A14E00D848EB /* TangoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangoApp.swift; sourceTree = "<group>"; };
 		CA670CE828D5A14E00D848EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,9 +46,6 @@
 		CA670CED28D5A14F00D848EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA670CFA28D5A6CE00D848EB /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		CA670CFE28D5ADBC00D848EB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		CA670D0128D5B98E00D848EB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		CA670D0628D5BA7D00D848EB /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-		CA670D0828D5BA8700D848EB /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		CA670D0B28D5CAFD00D848EB /* fontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fontModifier.swift; sourceTree = "<group>"; };
 		CA670D0D28D5D28A00D848EB /* ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,17 +55,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA21053128D70D7700DD2573 /* FirebaseAnalyticsSwift in Frameworks */,
+				CA21052F28D70D7700DD2573 /* FirebaseAnalytics in Frameworks */,
+				CA21053B28D727F700DD2573 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA21052828D6BA6600DD2573 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				CA21052928D6BA9400DD2573 /* ReviewView.swift */,
+				CA21053C28D855B300DD2573 /* SwipeTangoView.swift */,
+				CA21053E28D891F300DD2573 /* ReviewScreen.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		CA21053428D71F1600DD2573 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CA21053228D71D5600DD2573 /* ReviewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CA21053928D727F700DD2573 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CA670CDA28D5A14E00D848EB = {
 			isa = PBXGroup;
 			children = (
 				CA670CE528D5A14E00D848EB /* Tango */,
 				CA670CE428D5A14E00D848EB /* Products */,
+				CA21053928D727F700DD2573 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,12 +109,13 @@
 		CA670CE528D5A14E00D848EB /* Tango */ = {
 			isa = PBXGroup;
 			children = (
+				CA21053428D71F1600DD2573 /* ViewModels */,
 				CA670CF728D5A1F000D848EB /* Views */,
-				CA670CF628D5A16B00D848EB /* View Models */,
 				CA670CF528D5A16300D848EB /* Models */,
 				CA670CF428D5A15C00D848EB /* Utils */,
 				CA670CE628D5A14E00D848EB /* TangoApp.swift */,
 				CA670CEA28D5A14F00D848EB /* Assets.xcassets */,
+				CA21052B28D70A9D00DD2573 /* GoogleService-Info.plist */,
 				CA670CEC28D5A14F00D848EB /* Preview Content */,
 			);
 			path = Tango;
@@ -97,15 +142,9 @@
 		CA670CF528D5A16300D848EB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CA21053728D7240400DD2573 /* Tango.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		CA670CF628D5A16B00D848EB /* View Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Models";
 			sourceTree = "<group>";
 		};
 		CA670CF728D5A1F000D848EB /* Views */ = {
@@ -122,7 +161,8 @@
 		CA670D0028D5B8DB00D848EB /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				CA670D0128D5B98E00D848EB /* HomeView.swift */,
+				CA21052828D6BA6600DD2573 /* Review */,
+				CA21054028D8923600DD2573 /* HomeScreen.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -130,7 +170,7 @@
 		CA670D0328D5BA4F00D848EB /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				CA670D0828D5BA8700D848EB /* AccountView.swift */,
+				CA21054228D8928300DD2573 /* AccountScreen.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -138,7 +178,7 @@
 		CA670D0528D5BA6E00D848EB /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				CA670D0628D5BA7D00D848EB /* RegisterView.swift */,
+				CA21054428D892B400DD2573 /* RegisterScreen.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -168,6 +208,11 @@
 			dependencies = (
 			);
 			name = Tango;
+			packageProductDependencies = (
+				CA21052E28D70D7700DD2573 /* FirebaseAnalytics */,
+				CA21053028D70D7700DD2573 /* FirebaseAnalyticsSwift */,
+				CA21053A28D727F700DD2573 /* FirebaseFirestore */,
+			);
 			productName = Tango;
 			productReference = CA670CE328D5A14E00D848EB /* Tango.app */;
 			productType = "com.apple.product-type.application";
@@ -196,6 +241,9 @@
 				Base,
 			);
 			mainGroup = CA670CDA28D5A14E00D848EB;
+			packageReferences = (
+				CA21052D28D70D7700DD2573 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CA670CE428D5A14E00D848EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -212,6 +260,7 @@
 			files = (
 				CA670CEE28D5A14F00D848EB /* Preview Assets.xcassets in Resources */,
 				CA670CEB28D5A14F00D848EB /* Assets.xcassets in Resources */,
+				CA21052C28D70A9D00DD2573 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,13 +271,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA21054528D892B400DD2573 /* RegisterScreen.swift in Sources */,
+				CA21052A28D6BA9400DD2573 /* ReviewView.swift in Sources */,
 				CA670CFB28D5A6CE00D848EB /* Common.swift in Sources */,
 				CA670D0E28D5D28A00D848EB /* ViewModifier.swift in Sources */,
-				CA670D0228D5B98E00D848EB /* HomeView.swift in Sources */,
+				CA21054328D8928300DD2573 /* AccountScreen.swift in Sources */,
 				CA670CE928D5A14E00D848EB /* ContentView.swift in Sources */,
-				CA670D0728D5BA7D00D848EB /* RegisterView.swift in Sources */,
-				CA670D0928D5BA8700D848EB /* AccountView.swift in Sources */,
+				CA21053F28D891F300DD2573 /* ReviewScreen.swift in Sources */,
 				CA670D0C28D5CAFD00D848EB /* fontModifier.swift in Sources */,
+				CA21053328D71D5600DD2573 /* ReviewViewModel.swift in Sources */,
+				CA21053D28D855B300DD2573 /* SwipeTangoView.swift in Sources */,
+				CA21054128D8923600DD2573 /* HomeScreen.swift in Sources */,
+				CA21053828D7240400DD2573 /* Tango.swift in Sources */,
 				CA670CE728D5A14E00D848EB /* TangoApp.swift in Sources */,
 				CA670CFF28D5ADBC00D848EB /* Color.swift in Sources */,
 			);
@@ -429,6 +483,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA21052D28D70D7700DD2573 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA21052E28D70D7700DD2573 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA21052D28D70D7700DD2573 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CA21053028D70D7700DD2573 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA21052D28D70D7700DD2573 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		CA21053A28D727F700DD2573 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA21052D28D70D7700DD2573 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA670CDB28D5A14E00D848EB /* Project object */;
 }

@@ -22,9 +22,9 @@ struct HalfButton: ViewModifier {
     
     func body(content: Content) -> some View {
         content
+            .foregroundColor(TextColor.reverse)
             .padding(.horizontal, 15)
             .padding(.vertical, 7.5)
-            .foregroundColor(TextColor.reverse)
             .frame(width: FrameSize().width * 0.4)
             .background(color)
             .cornerRadius(5)

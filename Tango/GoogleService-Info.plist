@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>663198618429-34ufg771uqjishn556oqova4vcaac05e.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.663198618429-34ufg771uqjishn556oqova4vcaac05e</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBphq_FKNueOxkDvE2VlwnN4beu_P4lgJQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>663198618429</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.yoshida.Tango</string>
+	<key>PROJECT_ID</key>
+	<string>tango-9ed62</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tango-9ed62.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:663198618429:ios:82b7c2a26150dcf83f6b54</string>
+</dict>
+</plist>

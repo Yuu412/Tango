@@ -1,8 +1,8 @@
 //
-//  RegisterView.swift
+//  RegisterScreen.swift
 //  Tango
 //
-//  Created by Yoshida Yuya on 2022/09/17.
+//  Created by Yoshida Yuya on 2022/09/19.
 //
 
 import SwiftUI
