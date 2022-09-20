@@ -17,7 +17,6 @@ struct HomeScreen: View{
                 HomeContentsSection()
                 Spacer()
             }
-            
         }
     }
 }
@@ -98,6 +97,7 @@ struct HomeActivitySection: View {
                     .modifier(HalfButton(color: BackgroundColor.blueBackground))
                     .sheet(isPresented: $isReviewView) {
                         ReviewScreen()
+                            .environmentObject(ReviewViewModel())
                     }
                 }
                 .padding()

@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct ReviewScreen: View{
-    
-    @ObservedObject var tangoVM = ReviewViewModel()
+    @EnvironmentObject var tangoVM: ReviewViewModel
     
     var progressValue: Float = 0.2
-    
     
     var body: some View{
         
@@ -28,17 +26,18 @@ struct ReviewScreen: View{
                         .frame(width: FrameSize().width * 0.1, height: 5)
                         .cornerRadius(99)
                         .foregroundColor(BackgroundColor.lightBackground)
-                    
                 }
                 .padding(.vertical, 20)
                 
                 // 学習した単語数を示すゲージ
                 VStack {
-                    ProgressView(value: progressValue)
+                    ProgressView(value: tangoVM.gazeProgress)
                 }
                 .frame(width: FrameSize().width * 0.8)
                 
                 SwipeTangoView()
+                
+                //ReviewScreen2()
                 
                 Text("Hello")
                 Spacer()

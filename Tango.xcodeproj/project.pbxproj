@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA21052A28D6BA9400DD2573 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21052928D6BA9400DD2573 /* ReviewView.swift */; };
 		CA21052C28D70A9D00DD2573 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA21052B28D70A9D00DD2573 /* GoogleService-Info.plist */; };
 		CA21052F28D70D7700DD2573 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CA21052E28D70D7700DD2573 /* FirebaseAnalytics */; };
 		CA21053128D70D7700DD2573 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA21053028D70D7700DD2573 /* FirebaseAnalyticsSwift */; };
@@ -30,7 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CA21052928D6BA9400DD2573 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		CA21052B28D70A9D00DD2573 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CA21053228D71D5600DD2573 /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
 		CA21053728D7240400DD2573 /* Tango.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tango.swift; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 		CA21052828D6BA6600DD2573 /* Review */ = {
 			isa = PBXGroup;
 			children = (
-				CA21052928D6BA9400DD2573 /* ReviewView.swift */,
 				CA21053C28D855B300DD2573 /* SwipeTangoView.swift */,
 				CA21053E28D891F300DD2573 /* ReviewScreen.swift */,
 			);
@@ -272,7 +269,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA21054528D892B400DD2573 /* RegisterScreen.swift in Sources */,
-				CA21052A28D6BA9400DD2573 /* ReviewView.swift in Sources */,
 				CA670CFB28D5A6CE00D848EB /* Common.swift in Sources */,
 				CA670D0E28D5D28A00D848EB /* ViewModifier.swift in Sources */,
 				CA21054328D8928300DD2573 /* AccountScreen.swift in Sources */,
