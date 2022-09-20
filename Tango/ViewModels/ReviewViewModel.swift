@@ -45,12 +45,13 @@ class ReviewViewModel: ObservableObject {
         }
     }
     
-    func addGazeProgress() {
-        self.gazeProgress += 0.1
+    func addGazeProgress(listCount: Int) {
+        print(listCount)
+        self.gazeProgress += Double(1 / listCount)
     }
     
-    func subGazeProgress() {
-        self.gazeProgress -= 0.1
+    func subGazeProgress(listCount: Int) {
+        self.gazeProgress -= Double(1 / listCount)
     }
     
     init() {
