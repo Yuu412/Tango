@@ -24,6 +24,7 @@ struct TangoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ReviewViewModel())
         }
     }
 }

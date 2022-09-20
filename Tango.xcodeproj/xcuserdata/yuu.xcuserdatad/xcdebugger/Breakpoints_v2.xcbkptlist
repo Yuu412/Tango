@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "901A7C3F-103E-4481-B9A6-C5ECF4B41030"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E79BBB53-B89B-4AD2-A691-AABC62185F59"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tango/Views/Home/Review/SwipeTangoView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "E79BBB53-B89B-4AD2-A691-AABC62185F59 - 8e8ab21f9cbbe71d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tango.SwipeTangoView.tangoVM.getter : Tango.ReviewViewModel"
+                  moduleName = "Tango"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuu/Developer/iOS/Tango/Tango/Views/Home/Review/SwipeTangoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "E79BBB53-B89B-4AD2-A691-AABC62185F59 - 495a97e2e13d98b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tango.SwipeTangoView.$tangoVM.getter : SwiftUI.EnvironmentObject&lt;Tango.ReviewViewModel&gt;.Wrapper"
+                  moduleName = "Tango"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuu/Developer/iOS/Tango/Tango/Views/Home/Review/SwipeTangoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
