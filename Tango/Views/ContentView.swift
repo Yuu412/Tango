@@ -8,32 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    // ログイン判定
+    @AppStorage("log_status") var log_Status = false
+    
     var body: some View {
-        TabView {
-            HomeScreen()
-                .tabItem {
-                    Label("Home", systemImage: "house")
+        ZStack {
+            if self.log_Status {
+                TabView {
+                    HomeScreen()
+                        .tabItem {
+                            Label("Home", systemImage: "house")
+                        }
+                    AccountScreen()
+                        .tabItem {
+                            Label("Account", systemImage: "person.crop.circle.fill")
+                        }
+                    RegisterScreen()
+                        .tabItem {
+                            Label("tango", systemImage: "textformat")
+                        }
                 }
-            AccountScreen()
-                .tabItem {
-                    Label("Account", systemImage: "person.crop.circle.fill")
-                }
-            RegisterScreen()
-                .tabItem {
-                    Label("tango", systemImage: "textformat")
-                }
+            } else {
+                // サインイン用ページ
+                SignInScreen()
+            }
         }
-        
-    }
-}
-
-
-struct SummaryView: View{
-    var body: some View{
-        VStack{
-            
-        }
-        .frame(width: FrameSize().width, height: FrameSize().height * 0.775)
     }
 }
 

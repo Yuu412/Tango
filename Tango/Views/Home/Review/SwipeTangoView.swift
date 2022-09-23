@@ -12,7 +12,7 @@ struct SwipeTangoView: View {
     var betweenSpace: CGFloat = 20  // カード間のスペース
     var hidenCardWidth: CGFloat = 10    // 左右に隠れて見える部分のカードの幅
     var cardSize: CGFloat   //カードの幅(高さ)
-    var ignoreSwipeRange: CGFloat = 150 // スライドによる切替りを無効化する移動量(x)
+    var ignoreSwipeRange: CGFloat = 125 // スライドによる切替りを無効化する移動量(x)
     
     @State private var offset = CGFloat.zero
     // 移動量(x)の合計
