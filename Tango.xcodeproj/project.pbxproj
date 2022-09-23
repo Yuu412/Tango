@@ -18,6 +18,9 @@
 		CA21054128D8923600DD2573 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21054028D8923600DD2573 /* HomeScreen.swift */; };
 		CA21054328D8928300DD2573 /* AccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21054228D8928300DD2573 /* AccountScreen.swift */; };
 		CA21054528D892B400DD2573 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21054428D892B400DD2573 /* RegisterScreen.swift */; };
+		CA21054C28DDCA7100DD2573 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21054B28DDCA7100DD2573 /* SignInScreen.swift */; };
+		CA21054E28DDE54900DD2573 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CA21054D28DDE54900DD2573 /* FirebaseAuth */; };
+		CA21055228DDE9C900DD2573 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21055128DDE9C900DD2573 /* SignInViewModel.swift */; };
 		CA670CE728D5A14E00D848EB /* TangoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670CE628D5A14E00D848EB /* TangoApp.swift */; };
 		CA670CE928D5A14E00D848EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670CE828D5A14E00D848EB /* ContentView.swift */; };
 		CA670CEB28D5A14F00D848EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA670CEA28D5A14F00D848EB /* Assets.xcassets */; };
@@ -37,6 +40,9 @@
 		CA21054028D8923600DD2573 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		CA21054228D8928300DD2573 /* AccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreen.swift; sourceTree = "<group>"; };
 		CA21054428D892B400DD2573 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		CA21054B28DDCA7100DD2573 /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		CA21054F28DDE7F900DD2573 /* Tango.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tango.entitlements; sourceTree = "<group>"; };
+		CA21055128DDE9C900DD2573 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		CA670CE328D5A14E00D848EB /* Tango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tango.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA670CE628D5A14E00D848EB /* TangoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangoApp.swift; sourceTree = "<group>"; };
 		CA670CE828D5A14E00D848EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +62,7 @@
 				CA21053128D70D7700DD2573 /* FirebaseAnalyticsSwift in Frameworks */,
 				CA21052F28D70D7700DD2573 /* FirebaseAnalytics in Frameworks */,
 				CA21053B28D727F700DD2573 /* FirebaseFirestore in Frameworks */,
+				CA21054E28DDE54900DD2573 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,7 @@
 		CA21053428D71F1600DD2573 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CA21055028DDE81D00DD2573 /* Auth */,
 				CA21053228D71D5600DD2573 /* ReviewViewModel.swift */,
 			);
 			path = ViewModels;
@@ -84,6 +92,22 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA21054628DDB4BE00DD2573 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CA21054B28DDCA7100DD2573 /* SignInScreen.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		CA21055028DDE81D00DD2573 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CA21055128DDE9C900DD2573 /* SignInViewModel.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		CA670CDA28D5A14E00D848EB = {
@@ -106,6 +130,7 @@
 		CA670CE528D5A14E00D848EB /* Tango */ = {
 			isa = PBXGroup;
 			children = (
+				CA21054F28DDE7F900DD2573 /* Tango.entitlements */,
 				CA21053428D71F1600DD2573 /* ViewModels */,
 				CA670CF728D5A1F000D848EB /* Views */,
 				CA670CF528D5A16300D848EB /* Models */,
@@ -147,6 +172,7 @@
 		CA670CF728D5A1F000D848EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CA21054628DDB4BE00DD2573 /* Auth */,
 				CA670D0528D5BA6E00D848EB /* Register */,
 				CA670D0328D5BA4F00D848EB /* Account */,
 				CA670D0028D5B8DB00D848EB /* Home */,
@@ -209,6 +235,7 @@
 				CA21052E28D70D7700DD2573 /* FirebaseAnalytics */,
 				CA21053028D70D7700DD2573 /* FirebaseAnalyticsSwift */,
 				CA21053A28D727F700DD2573 /* FirebaseFirestore */,
+				CA21054D28DDE54900DD2573 /* FirebaseAuth */,
 			);
 			productName = Tango;
 			productReference = CA670CE328D5A14E00D848EB /* Tango.app */;
@@ -273,6 +300,7 @@
 				CA670D0E28D5D28A00D848EB /* ViewModifier.swift in Sources */,
 				CA21054328D8928300DD2573 /* AccountScreen.swift in Sources */,
 				CA670CE928D5A14E00D848EB /* ContentView.swift in Sources */,
+				CA21054C28DDCA7100DD2573 /* SignInScreen.swift in Sources */,
 				CA21053F28D891F300DD2573 /* ReviewScreen.swift in Sources */,
 				CA670D0C28D5CAFD00D848EB /* fontModifier.swift in Sources */,
 				CA21053328D71D5600DD2573 /* ReviewViewModel.swift in Sources */,
@@ -281,6 +309,7 @@
 				CA21053828D7240400DD2573 /* Tango.swift in Sources */,
 				CA670CE728D5A14E00D848EB /* TangoApp.swift in Sources */,
 				CA670CFF28D5ADBC00D848EB /* Color.swift in Sources */,
+				CA21055228DDE9C900DD2573 /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,9 +435,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Tango/Tango.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tango/Preview Content\"";
+				DEVELOPMENT_TEAM = GQPL67LS48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -434,9 +465,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Tango/Tango.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tango/Preview Content\"";
+				DEVELOPMENT_TEAM = GQPL67LS48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -506,6 +539,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CA21052D28D70D7700DD2573 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		CA21054D28DDE54900DD2573 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA21052D28D70D7700DD2573 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

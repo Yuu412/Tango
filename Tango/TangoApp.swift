@@ -7,7 +7,20 @@
 
 import SwiftUI
 import FirebaseCore
+import Firebase
 
+@main
+struct TangoApp: App {
+    // Calling Delegate...
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+ 
 // FirebaseをAppの起動時に初期化するための処理
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
@@ -16,15 +29,4 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
     return true
   }
-}
-
-@main
-struct TangoApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environmentObject(ReviewViewModel())
-        }
-    }
 }

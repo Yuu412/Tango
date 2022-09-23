@@ -4,6 +4,7 @@
 //
 //  Created by Yoshida Yuya on 2022/09/19.
 //
+// Parent: ContentView
 
 import SwiftUI
 
