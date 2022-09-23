@@ -18,8 +18,3 @@ struct FrameSize{
         UIScreen.main.bounds.height
     }
 }
-
-// フォントサイズに関する定義
-struct FontSize {
-    
-}

@@ -10,7 +10,12 @@ import FirebaseFirestore
 
 class ReviewViewModel: ObservableObject {
     @Published var tangoList = [Tangos.Tango]()
-    @Published var gazeProgress = 0.1
+    @Published var gazeProgress =  0.0
+    @Published var isFinish = false
+    
+    init() {
+        getData()
+    }
   
     func getData() {
         // Get a referance to the database
@@ -45,17 +50,22 @@ class ReviewViewModel: ObservableObject {
         }
     }
     
+    // 進捗ゲージの加算
     func addGazeProgress(listCount: Int) {
-        print(listCount)
-        self.gazeProgress += Double(1 / listCount)
+        self.gazeProgress += 1 / Double(listCount)
+        // 復習予定の全ての単語の終了時
+        if(self.gazeProgress >= 1){
+            self.finish()
+        }
     }
     
+    // 進捗ゲージの減算
     func subGazeProgress(listCount: Int) {
-        self.gazeProgress -= Double(1 / listCount)
+        self.gazeProgress -= 1 / Double(listCount)
     }
     
-    init() {
-        getData()
+    // 復習終了フラグの真偽値変更
+    func finish() {
+        self.isFinish = true
     }
-
 }

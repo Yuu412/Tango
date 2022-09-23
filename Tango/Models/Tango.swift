@@ -16,6 +16,4 @@ struct Tangos {
         var enSentence: String
         var jaSentence: String
     }
-    
 }
-
