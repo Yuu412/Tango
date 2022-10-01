@@ -53,8 +53,8 @@ struct ReviewScreen: View{
                             dismiss()
                         } label: {
                             Text("閉じる")
+                                .modifier(DefaultButton(color: Color.blue))
                         }
-                        .modifier(DefaultButton(color: Color.blue))
 
                     }
                 } else {

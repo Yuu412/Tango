@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     // ログイン判定
-    @AppStorage("log_status") var log_Status = false
+    // 検証用（ログイン無効化）
+    @AppStorage("log_status") var log_Status = true
+    // 本番用
+    //@AppStorage("log_status") var log_Status = false
     
     var body: some View {
         ZStack {
@@ -23,7 +26,7 @@ struct ContentView: View {
                         .tabItem {
                             Label("Account", systemImage: "person.crop.circle.fill")
                         }
-                    RegisterScreen()
+                    TangoScreen()
                         .tabItem {
                             Label("tango", systemImage: "textformat")
                         }

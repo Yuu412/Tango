@@ -26,7 +26,7 @@ struct SwipeTangoView: View {
     
     var body: some View {
         HStack(spacing: betweenSpace) {
-            ForEach(tangoVM.tangoList) { tango in
+            ForEach(tangoVM.tangos) { tango in
                 VStack(spacing: 20) {
                     Text(tango.enName)
                         .font(.system(Font.TextStyle.title, weight: .bold))
@@ -49,7 +49,7 @@ struct SwipeTangoView: View {
             }
         }
         .contentShape(Rectangle())  // Tapで反応するエリアを拡張
-        .offset(x: (betweenSpace + cardSize) * CGFloat(tangoVM.tangoList.count - 1) / 2 + stackWidth + offset)  // 画面中心のx座標を計算
+        .offset(x: (betweenSpace + cardSize) * CGFloat(tangoVM.tangos.count - 1) / 2 + stackWidth + offset)  // 画面中心のx座標を計算
         .gesture( DragGesture()
             .onChanged { value in
                 // gestureが変化したときの動作を定義
@@ -58,7 +58,7 @@ struct SwipeTangoView: View {
                     if value.translation.width < 0{
                         self.offset = value.translation.width
                     }
-                } else if stackWidth == -CGFloat(tangoVM.tangoList.count - 1) * (cardSize + betweenSpace) {
+                } else if stackWidth == -CGFloat(tangoVM.tangos.count - 1) * (cardSize + betweenSpace) {
                     // 配列末尾の要素の場合
                     if value.translation.width > 0 {
                         self.offset = value.translation.width
@@ -78,15 +78,15 @@ struct SwipeTangoView: View {
                     if xWidth < -ignoreSwipeRange{
                         // Hstackの中心をx軸マイナス方向に移動 -> 中心となる配列の要素を次の要素とする
                         stackWidth -= cardSize + betweenSpace
-                        tangoVM.addGazeProgress(listCount: tangoVM.tangoList.count)
+                        tangoVM.addGazeProgress(listCount: tangoVM.tangos.count)
                     }
                 } else {
                     if xWidth < -ignoreSwipeRange {
                         stackWidth -= cardSize + betweenSpace
-                        tangoVM.addGazeProgress(listCount: tangoVM.tangoList.count)
+                        tangoVM.addGazeProgress(listCount: tangoVM.tangos.count)
                     } else if xWidth > ignoreSwipeRange {
                         stackWidth += cardSize + betweenSpace
-                        tangoVM.subGazeProgress(listCount: tangoVM.tangoList.count)
+                        tangoVM.subGazeProgress(listCount: tangoVM.tangos.count)
                     }
                 }
             }

@@ -26,8 +26,6 @@ struct BackgroundColor{
 }
 
 struct TextColor {
-    
-    
     // light
     static let light = Color("LightTextColor")
     
@@ -35,4 +33,7 @@ struct TextColor {
     
     // reverse
     static let reverse = Color("ReverseTextColor")
+    
+    // blue
+    static let blue = Color.blue
 }

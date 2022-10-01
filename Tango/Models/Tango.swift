@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 struct Tangos {
     // Firestore上のデータ形式
@@ -15,5 +16,8 @@ struct Tangos {
         var jaName: String
         var enSentence: String
         var jaSentence: String
+        var referenceID: String
+        var memo1: String
+        var memo2: String
     }
 }

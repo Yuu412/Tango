@@ -12,7 +12,12 @@ import Firebase
 
 class SignInViewModel: ObservableObject {
     @Published var nonce = randomNonceString()
-    @AppStorage("log_status") var log_Status = false
+    
+    // 検証用（ログインを無効化）
+    @AppStorage("log_status") var log_Status = true
+    
+    // 本番用
+    //@AppStorage("log_status") var log_Status = false
     
     func authenticate(credential: ASAuthorizationAppleIDCredential) {
         // getting Token...
