@@ -16,33 +16,13 @@ struct CardView: ViewModifier {
     }
 }
 
-// defaultボタン
-struct DefaultButton: ViewModifier {
-    var color: Color
-    
+struct CloseSheetRectangle: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .foregroundColor(TextColor.reverse)
-            .padding(.horizontal, 15)
-            .padding(.vertical, 12.5)
-            .frame(width: FrameSize().width * 0.8)
-            .background(color)
-            .cornerRadius(10)
+            .background(Color.gray)
+            .frame(width: FrameSize().width * 0.1, height: 5)
+            .cornerRadius(99)
+            .foregroundColor(BackgroundColor.lightBackground)
     }
 }
 
-
-// 左右半分のボタン
-struct HalfButton: ViewModifier {
-    var color: Color
-    
-    func body(content: Content) -> some View {
-        content
-            .foregroundColor(TextColor.reverse)
-            .padding(.horizontal, 15)
-            .padding(.vertical, 7.5)
-            .frame(width: FrameSize().width * 0.4)
-            .background(color)
-            .cornerRadius(5)
-    }
-}

@@ -7,47 +7,21 @@
 
 import Foundation
 import FirebaseFirestore
+import Combine
 
 class ReviewViewModel: ObservableObject {
-    @Published var tangoList = [Tangos.Tango]()
+    @Published var tangoRepository = TangoRepository()
+    @Published var tangos: [Tangos.Tango] = []
+    
     @Published var gazeProgress =  0.0
     @Published var isFinish = false
     
+    private var cancellables: Set<AnyCancellable> = []
+    
     init() {
-        getData()
-    }
-  
-    func getData() {
-        // Get a referance to the database
-        let db = Firestore.firestore()
-        
-        db.collection("tangos").getDocuments{ snapshot, error in
-            // Check for errors
-            if error == nil {
-                // No errors
-                
-                if let snapshot = snapshot {
-                    
-                    // Update the list property in the main thread
-                    DispatchQueue.main.async {
-                        // Get all the documents and create Tangos
-                        self.tangoList = snapshot.documents.map { d in
-                            
-                            //Create a Tango item for each document returned
-                            return Tangos.Tango(
-                                id: d.documentID,
-                                enName: d["enName"] as? String ?? "",
-                                jaName: d["jaName"] as? String ?? "",
-                                enSentence: d["enSentence"] as? String ?? "",
-                                jaSentence: d["jaSentence"] as? String ?? ""
-                            )
-                        }
-                    }
-                }
-            } else {
-                // Handle the error
-            }
-        }
+        // TangoRepositoryのtangosをこのクラスで定義したtangosに代入
+        tangoRepository.$tangos.assign(to: \.tangos, on: self)
+            .store(in: &cancellables)
     }
     
     // 進捗ゲージの加算

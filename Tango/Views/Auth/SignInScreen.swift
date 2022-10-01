@@ -63,7 +63,10 @@ struct SignInScreen: View{
             .signInWithAppleButtonStyle(.white)
             .frame(width: FrameSize().width * 0.8, height: 55)
             .clipShape(Capsule())
-            .padding(.bottom, 50)
+            
+            Text("復習を始める")
+                .foregroundColor(Color.blue)
+                .padding(.bottom, 50)
         }
     }
     

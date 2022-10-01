@@ -17,18 +17,37 @@
 		CA21053F28D891F300DD2573 /* ReviewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21053E28D891F300DD2573 /* ReviewScreen.swift */; };
 		CA21054128D8923600DD2573 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21054028D8923600DD2573 /* HomeScreen.swift */; };
 		CA21054328D8928300DD2573 /* AccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21054228D8928300DD2573 /* AccountScreen.swift */; };
-		CA21054528D892B400DD2573 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21054428D892B400DD2573 /* RegisterScreen.swift */; };
 		CA21054C28DDCA7100DD2573 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21054B28DDCA7100DD2573 /* SignInScreen.swift */; };
 		CA21054E28DDE54900DD2573 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CA21054D28DDE54900DD2573 /* FirebaseAuth */; };
 		CA21055228DDE9C900DD2573 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21055128DDE9C900DD2573 /* SignInViewModel.swift */; };
+		CA21055928DE9FAF00DD2573 /* FontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21055828DE9FAF00DD2573 /* FontModifier.swift */; };
+		CA21055C28DED05E00DD2573 /* TangoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21055B28DED05E00DD2573 /* TangoScreen.swift */; };
+		CA21056028DED63600DD2573 /* RegisterTangoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21055F28DED63600DD2573 /* RegisterTangoView.swift */; };
+		CA21056228DED68900DD2573 /* RegisterSentenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21056128DED68900DD2573 /* RegisterSentenceView.swift */; };
+		CA21056528DEE50E00DD2573 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21056428DEE50E00DD2573 /* RegisterViewModel.swift */; };
+		CA21056728DF0BD200DD2573 /* SelectReferenceTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21056628DF0BD200DD2573 /* SelectReferenceTypeView.swift */; };
+		CA21056B28DF157100DD2573 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21056A28DF157100DD2573 /* ButtonModifier.swift */; };
+		CA21057128DF184600DD2573 /* IconExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21057028DF184600DD2573 /* IconExtension.swift */; };
+		CA21057328DF1C1700DD2573 /* RegisterReferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21057228DF1C1700DD2573 /* RegisterReferenceView.swift */; };
+		CA21057528DF1C2D00DD2573 /* SelectReferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21057428DF1C2D00DD2573 /* SelectReferenceView.swift */; };
+		CA21057728DF218400DD2573 /* RegisterReferenceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21057628DF218400DD2573 /* RegisterReferenceViewModel.swift */; };
+		CA21057928E00F8500DD2573 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CA21057828E00F8500DD2573 /* FirebaseStorage */; };
+		CA21058028E0275D00DD2573 /* ReferenceImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21057F28E0275D00DD2573 /* ReferenceImagePicker.swift */; };
+		CA21058228E03C9F00DD2573 /* CoverImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21058128E03C9F00DD2573 /* CoverImageExtension.swift */; };
+		CA21058428E050CC00DD2573 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21058328E050CC00DD2573 /* Reference.swift */; };
+		CA21058628E07F9900DD2573 /* RegisterTangoConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21058528E07F9900DD2573 /* RegisterTangoConfirmView.swift */; };
+		CA21058828E0964100DD2573 /* ReferenceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21058728E0964100DD2573 /* ReferenceViewModel.swift */; };
+		CA21058D28E19C6400DD2573 /* TangoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21058C28E19C6400DD2573 /* TangoRepository.swift */; };
+		CA21058F28E1A39400DD2573 /* ReferenceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21058E28E1A39400DD2573 /* ReferenceRepository.swift */; };
+		CA21059228E33CD900DD2573 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21059128E33CD900DD2573 /* ImageConstants.swift */; };
 		CA670CE728D5A14E00D848EB /* TangoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670CE628D5A14E00D848EB /* TangoApp.swift */; };
 		CA670CE928D5A14E00D848EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670CE828D5A14E00D848EB /* ContentView.swift */; };
 		CA670CEB28D5A14F00D848EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA670CEA28D5A14F00D848EB /* Assets.xcassets */; };
 		CA670CEE28D5A14F00D848EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA670CED28D5A14F00D848EB /* Preview Assets.xcassets */; };
 		CA670CFB28D5A6CE00D848EB /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670CFA28D5A6CE00D848EB /* Common.swift */; };
 		CA670CFF28D5ADBC00D848EB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670CFE28D5ADBC00D848EB /* Color.swift */; };
-		CA670D0C28D5CAFD00D848EB /* fontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670D0B28D5CAFD00D848EB /* fontModifier.swift */; };
 		CA670D0E28D5D28A00D848EB /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670D0D28D5D28A00D848EB /* ViewModifier.swift */; };
+		CA99534328E7D7BD00C3B55B /* ConfirmRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99534228E7D7BD00C3B55B /* ConfirmRegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +58,28 @@
 		CA21053E28D891F300DD2573 /* ReviewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewScreen.swift; sourceTree = "<group>"; };
 		CA21054028D8923600DD2573 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		CA21054228D8928300DD2573 /* AccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreen.swift; sourceTree = "<group>"; };
-		CA21054428D892B400DD2573 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		CA21054B28DDCA7100DD2573 /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
 		CA21054F28DDE7F900DD2573 /* Tango.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tango.entitlements; sourceTree = "<group>"; };
 		CA21055128DDE9C900DD2573 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		CA21055828DE9FAF00DD2573 /* FontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontModifier.swift; sourceTree = "<group>"; };
+		CA21055B28DED05E00DD2573 /* TangoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangoScreen.swift; sourceTree = "<group>"; };
+		CA21055F28DED63600DD2573 /* RegisterTangoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTangoView.swift; sourceTree = "<group>"; };
+		CA21056128DED68900DD2573 /* RegisterSentenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSentenceView.swift; sourceTree = "<group>"; };
+		CA21056428DEE50E00DD2573 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		CA21056628DF0BD200DD2573 /* SelectReferenceTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectReferenceTypeView.swift; sourceTree = "<group>"; };
+		CA21056A28DF157100DD2573 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		CA21057028DF184600DD2573 /* IconExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconExtension.swift; sourceTree = "<group>"; };
+		CA21057228DF1C1700DD2573 /* RegisterReferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterReferenceView.swift; sourceTree = "<group>"; };
+		CA21057428DF1C2D00DD2573 /* SelectReferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectReferenceView.swift; sourceTree = "<group>"; };
+		CA21057628DF218400DD2573 /* RegisterReferenceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterReferenceViewModel.swift; sourceTree = "<group>"; };
+		CA21057F28E0275D00DD2573 /* ReferenceImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceImagePicker.swift; sourceTree = "<group>"; };
+		CA21058128E03C9F00DD2573 /* CoverImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageExtension.swift; sourceTree = "<group>"; };
+		CA21058328E050CC00DD2573 /* Reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
+		CA21058528E07F9900DD2573 /* RegisterTangoConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTangoConfirmView.swift; sourceTree = "<group>"; };
+		CA21058728E0964100DD2573 /* ReferenceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceViewModel.swift; sourceTree = "<group>"; };
+		CA21058C28E19C6400DD2573 /* TangoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangoRepository.swift; sourceTree = "<group>"; };
+		CA21058E28E1A39400DD2573 /* ReferenceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceRepository.swift; sourceTree = "<group>"; };
+		CA21059128E33CD900DD2573 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
 		CA670CE328D5A14E00D848EB /* Tango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tango.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA670CE628D5A14E00D848EB /* TangoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangoApp.swift; sourceTree = "<group>"; };
 		CA670CE828D5A14E00D848EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,8 +87,8 @@
 		CA670CED28D5A14F00D848EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA670CFA28D5A6CE00D848EB /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		CA670CFE28D5ADBC00D848EB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		CA670D0B28D5CAFD00D848EB /* fontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fontModifier.swift; sourceTree = "<group>"; };
 		CA670D0D28D5D28A00D848EB /* ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
+		CA99534228E7D7BD00C3B55B /* ConfirmRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmRegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +99,7 @@
 				CA21053128D70D7700DD2573 /* FirebaseAnalyticsSwift in Frameworks */,
 				CA21052F28D70D7700DD2573 /* FirebaseAnalytics in Frameworks */,
 				CA21053B28D727F700DD2573 /* FirebaseFirestore in Frameworks */,
+				CA21057928E00F8500DD2573 /* FirebaseStorage in Frameworks */,
 				CA21054E28DDE54900DD2573 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,8 +119,10 @@
 		CA21053428D71F1600DD2573 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CA21056328DEE4F600DD2573 /* Register */,
 				CA21055028DDE81D00DD2573 /* Auth */,
 				CA21053228D71D5600DD2573 /* ReviewViewModel.swift */,
+				CA21058728E0964100DD2573 /* ReferenceViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -110,6 +150,50 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		CA21055A28DED04000DD2573 /* Tango */ = {
+			isa = PBXGroup;
+			children = (
+				CA670D0528D5BA6E00D848EB /* Register */,
+				CA21055B28DED05E00DD2573 /* TangoScreen.swift */,
+			);
+			path = Tango;
+			sourceTree = "<group>";
+		};
+		CA21056328DEE4F600DD2573 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				CA21056428DEE50E00DD2573 /* RegisterViewModel.swift */,
+				CA21057628DF218400DD2573 /* RegisterReferenceViewModel.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		CA21056F28DF182F00DD2573 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CA21057028DF184600DD2573 /* IconExtension.swift */,
+				CA21058128E03C9F00DD2573 /* CoverImageExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CA21058928E196FE00DD2573 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CA21058C28E19C6400DD2573 /* TangoRepository.swift */,
+				CA21058E28E1A39400DD2573 /* ReferenceRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CA21059028E33C9A00DD2573 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				CA21059128E33CD900DD2573 /* ImageConstants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		CA670CDA28D5A14E00D848EB = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +214,7 @@
 		CA670CE528D5A14E00D848EB /* Tango */ = {
 			isa = PBXGroup;
 			children = (
+				CA21058928E196FE00DD2573 /* Repository */,
 				CA21054F28DDE7F900DD2573 /* Tango.entitlements */,
 				CA21053428D71F1600DD2573 /* ViewModels */,
 				CA670CF728D5A1F000D848EB /* Views */,
@@ -154,6 +239,8 @@
 		CA670CF428D5A15C00D848EB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CA21059028E33C9A00DD2573 /* Constant */,
+				CA21056F28DF182F00DD2573 /* Extension */,
 				CA670D0A28D5CAD400D848EB /* Modifier */,
 				CA670CFA28D5A6CE00D848EB /* Common.swift */,
 				CA670CFE28D5ADBC00D848EB /* Color.swift */,
@@ -165,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				CA21053728D7240400DD2573 /* Tango.swift */,
+				CA21058328E050CC00DD2573 /* Reference.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,8 +260,8 @@
 		CA670CF728D5A1F000D848EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CA21055A28DED04000DD2573 /* Tango */,
 				CA21054628DDB4BE00DD2573 /* Auth */,
-				CA670D0528D5BA6E00D848EB /* Register */,
 				CA670D0328D5BA4F00D848EB /* Account */,
 				CA670D0028D5B8DB00D848EB /* Home */,
 				CA670CE828D5A14E00D848EB /* ContentView.swift */,
@@ -201,7 +289,14 @@
 		CA670D0528D5BA6E00D848EB /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				CA21054428D892B400DD2573 /* RegisterScreen.swift */,
+				CA21055F28DED63600DD2573 /* RegisterTangoView.swift */,
+				CA21056128DED68900DD2573 /* RegisterSentenceView.swift */,
+				CA21056628DF0BD200DD2573 /* SelectReferenceTypeView.swift */,
+				CA21057228DF1C1700DD2573 /* RegisterReferenceView.swift */,
+				CA21057428DF1C2D00DD2573 /* SelectReferenceView.swift */,
+				CA21057F28E0275D00DD2573 /* ReferenceImagePicker.swift */,
+				CA21058528E07F9900DD2573 /* RegisterTangoConfirmView.swift */,
+				CA99534228E7D7BD00C3B55B /* ConfirmRegisterView.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -209,8 +304,9 @@
 		CA670D0A28D5CAD400D848EB /* Modifier */ = {
 			isa = PBXGroup;
 			children = (
-				CA670D0B28D5CAFD00D848EB /* fontModifier.swift */,
 				CA670D0D28D5D28A00D848EB /* ViewModifier.swift */,
+				CA21055828DE9FAF00DD2573 /* FontModifier.swift */,
+				CA21056A28DF157100DD2573 /* ButtonModifier.swift */,
 			);
 			path = Modifier;
 			sourceTree = "<group>";
@@ -236,6 +332,7 @@
 				CA21053028D70D7700DD2573 /* FirebaseAnalyticsSwift */,
 				CA21053A28D727F700DD2573 /* FirebaseFirestore */,
 				CA21054D28DDE54900DD2573 /* FirebaseAuth */,
+				CA21057828E00F8500DD2573 /* FirebaseStorage */,
 			);
 			productName = Tango;
 			productReference = CA670CE328D5A14E00D848EB /* Tango.app */;
@@ -295,21 +392,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA21054528D892B400DD2573 /* RegisterScreen.swift in Sources */,
+				CA21055928DE9FAF00DD2573 /* FontModifier.swift in Sources */,
 				CA670CFB28D5A6CE00D848EB /* Common.swift in Sources */,
 				CA670D0E28D5D28A00D848EB /* ViewModifier.swift in Sources */,
 				CA21054328D8928300DD2573 /* AccountScreen.swift in Sources */,
+				CA21058628E07F9900DD2573 /* RegisterTangoConfirmView.swift in Sources */,
+				CA21055C28DED05E00DD2573 /* TangoScreen.swift in Sources */,
 				CA670CE928D5A14E00D848EB /* ContentView.swift in Sources */,
+				CA21057728DF218400DD2573 /* RegisterReferenceViewModel.swift in Sources */,
+				CA21058F28E1A39400DD2573 /* ReferenceRepository.swift in Sources */,
+				CA21056228DED68900DD2573 /* RegisterSentenceView.swift in Sources */,
+				CA21056528DEE50E00DD2573 /* RegisterViewModel.swift in Sources */,
 				CA21054C28DDCA7100DD2573 /* SignInScreen.swift in Sources */,
+				CA21056028DED63600DD2573 /* RegisterTangoView.swift in Sources */,
 				CA21053F28D891F300DD2573 /* ReviewScreen.swift in Sources */,
-				CA670D0C28D5CAFD00D848EB /* fontModifier.swift in Sources */,
 				CA21053328D71D5600DD2573 /* ReviewViewModel.swift in Sources */,
+				CA21059228E33CD900DD2573 /* ImageConstants.swift in Sources */,
 				CA21053D28D855B300DD2573 /* SwipeTangoView.swift in Sources */,
+				CA21057128DF184600DD2573 /* IconExtension.swift in Sources */,
+				CA21058228E03C9F00DD2573 /* CoverImageExtension.swift in Sources */,
+				CA21057528DF1C2D00DD2573 /* SelectReferenceView.swift in Sources */,
 				CA21054128D8923600DD2573 /* HomeScreen.swift in Sources */,
+				CA21056B28DF157100DD2573 /* ButtonModifier.swift in Sources */,
+				CA21058028E0275D00DD2573 /* ReferenceImagePicker.swift in Sources */,
 				CA21053828D7240400DD2573 /* Tango.swift in Sources */,
 				CA670CE728D5A14E00D848EB /* TangoApp.swift in Sources */,
+				CA99534328E7D7BD00C3B55B /* ConfirmRegisterView.swift in Sources */,
 				CA670CFF28D5ADBC00D848EB /* Color.swift in Sources */,
+				CA21058828E0964100DD2573 /* ReferenceViewModel.swift in Sources */,
+				CA21057328DF1C1700DD2573 /* RegisterReferenceView.swift in Sources */,
+				CA21058428E050CC00DD2573 /* Reference.swift in Sources */,
 				CA21055228DDE9C900DD2573 /* SignInViewModel.swift in Sources */,
+				CA21058D28E19C6400DD2573 /* TangoRepository.swift in Sources */,
+				CA21056728DF0BD200DD2573 /* SelectReferenceTypeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,11 +557,13 @@
 				DEVELOPMENT_TEAM = GQPL67LS48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,11 +589,13 @@
 				DEVELOPMENT_TEAM = GQPL67LS48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,6 +663,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CA21052D28D70D7700DD2573 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		CA21057828E00F8500DD2573 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA21052D28D70D7700DD2573 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

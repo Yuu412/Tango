@@ -41,6 +41,7 @@ struct HomeHeaderSection: View {
 // 活動記録セクション
 struct HomeActivitySection: View {
     // 表示フラグ
+    @State private var isRegisterTangoView: Bool = false
     @State private var isReviewView: Bool = false
     
     var body: some View{
@@ -72,7 +73,7 @@ struct HomeActivitySection: View {
                 HStack {
                     // 単語を追加するViewに遷移
                     Button(action: {
-                        
+                        isRegisterTangoView.toggle()
                     }, label: {
                         HStack {
                             Image(systemName: "textformat")
@@ -81,6 +82,10 @@ struct HomeActivitySection: View {
                         }
                     })
                     .modifier(HalfButton(color: BackgroundColor.lightBackground))
+                    .sheet(isPresented: $isRegisterTangoView) {
+                        SelectReferenceView()
+                            .environmentObject(ReferenceViewModel())
+                    }
                     
                     
                     Spacer()

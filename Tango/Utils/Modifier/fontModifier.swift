@@ -1,8 +1,8 @@
 //
-//  fontModifier.swift
+//  FontModifier.swift
 //  Tango
 //
-//  Created by Yoshida Yuya on 2022/09/17.
+//  Created by Yoshida Yuya on 2022/09/24.
 //
 
 import SwiftUI
@@ -35,4 +35,36 @@ struct ButtonTitle: ViewModifier {
             .font(.system(Font.TextStyle.callout, weight: .bold))
     }
 }
+
+struct PageDescription: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.system(Font.TextStyle.subheadline, weight: .bold))
+            .foregroundColor(TextColor.light)
+            .multilineTextAlignment(.center)
+            .frame(width: FrameSize().width * 0.7)
+    }
+}
+
+struct UnderContentDescription: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.system(Font.TextStyle.callout, weight: .bold))
+            .foregroundColor(TextColor.blue)
+            .multilineTextAlignment(.center)
+            .frame(width: FrameSize().width * 0.7)
+    }
+}
+
+struct ReferenceTitle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.system(Font.TextStyle.footnote, weight: .medium))
+            .foregroundColor(TextColor.light)
+            .multilineTextAlignment(.center)
+            .frame(width: CoverImageConstants.idealWidth)
+            .lineLimit(2)
+    }
+}
+
 
