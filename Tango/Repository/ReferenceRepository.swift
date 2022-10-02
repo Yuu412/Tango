@@ -8,19 +8,28 @@
 import SwiftUI
 import FirebaseFirestore
 import FirebaseStorage
+import FirebaseAuth
 
 final class ReferenceRepository: ObservableObject {
     private let db = Firestore.firestore()
     private let table = "references"
     
     // defaultのカバー画像の設定
-    private let defaultImage = UIImage(named: "referenceExample")
+    private let defaultImage = UIImage(named: "referenceExample")!
     
     @Published var references: [References.Reference] = []
     
     init() {
         getData()
     }
+    
+    // String型からDate型への型変換（キャスト）
+    func StringToDate(dateValue: String, format: String) -> Date {
+           let dateFormatter = DateFormatter()
+           dateFormatter.calendar = Calendar(identifier: .gregorian)
+           dateFormatter.dateFormat = format
+           return dateFormatter.date(from: dateValue) ?? Date()
+       }
     
     // Firebaseからの情報取得
     func getData() {
@@ -41,16 +50,33 @@ final class ReferenceRepository: ObservableObject {
                     
                     fileRef.getData(maxSize: 5 * 1024 * 1024) { data, error in
                         // Check for errors
+                        
                         if error == nil && data != nil {
+                            
+                            // 明日確認
+//                            let coverImage: UIImage
+//                            if let image = UIImage(data: data!){
+//                                coverImage = image
+//                            } else {
+//                                coverImage = self.defaultImage
+//                            }
+                        
+                            
+                            
+                            
+                            
                             // Create a UIImage
                             if let image = UIImage(data: data!) {
                                 DispatchQueue.main.async {
                                     self.references.append(
                                         References.Reference(
                                             id: doc.documentID,
+                                            userID: doc["userID"] as? String ?? "",
                                             title: doc["title"] as? String ?? "",
                                             label: doc["label"] as? String ?? "",
-                                            image: image
+                                            image: image,
+                                            createdAt: doc["createdAt"] as? Date ?? Date(),
+                                            updatedAt: doc["updatedAt"] as? Date ?? Date()
                                         )
                                     )
                                 }
@@ -59,9 +85,12 @@ final class ReferenceRepository: ObservableObject {
                                     self.references.append(
                                         References.Reference(
                                             id: doc.documentID,
+                                            userID: doc["userID"] as? String ?? "",
                                             title: doc["title"] as? String ?? "",
                                             label: doc["label"] as? String ?? "",
-                                            image: self.defaultImage!
+                                            image: self.defaultImage,
+                                            createdAt: doc["createdAt"] as? Date ?? Date(),
+                                            updatedAt: doc["updatedAt"] as? Date ?? Date()
                                         )
                                     )
                                 }
@@ -75,15 +104,24 @@ final class ReferenceRepository: ObservableObject {
     
     // Firebaseへの情報追加
     func addData(title: String, label: String, image: UIImage?) {
+        // ログインユーザーの取得
+        guard let user = Auth.auth().currentUser else {
+            print("need sign in")
+            return
+        }
+        
         // nil check
         guard let unwrapImage = image else {
             // Save a reference to the file in FireStore DB
             db.collection(table)
                 .document()
                 .setData([
+                    "userID": user.uid,
                     "title": title,
                     "label": label,
-                    "url": ""
+                    "url": "",
+                    "createdAt": Date(),
+                    "updatedAt": Date()
                 ])
             return
         }
@@ -92,7 +130,7 @@ final class ReferenceRepository: ObservableObject {
         let storageRef = Storage.storage().reference()
         
         // Turn our image into data
-        let imageData = unwrapImage.jpegData(compressionQuality: 0.8)
+        let imageData = unwrapImage.jpegData(compressionQuality: 0.25)
         
         // Check that we were able to convert it to data
         guard imageData != nil else {
@@ -113,9 +151,12 @@ final class ReferenceRepository: ObservableObject {
                 db.collection("references")
                     .document()
                     .setData([
+                        "userID": user.uid,
                         "title": title,
                         "label": label,
-                        "url": path
+                        "url": path,
+                        "createdAt": Date(),
+                        "updatedAt": Date()
                     ])
             }
             

@@ -88,8 +88,8 @@ struct ConfirmTangoView: View {
                 .frame(width: FrameSize().width * 0.8)
             }
             
-            // 「例文」
-            if !registerVM.enSentence.isEmpty {
+            // 「参照元」
+            if !registerVM.referenceID.isEmpty {
                 HStack(spacing: 5) {
                     // チェックマークのアイコン
                     Image(systemName: "checkmark.circle")

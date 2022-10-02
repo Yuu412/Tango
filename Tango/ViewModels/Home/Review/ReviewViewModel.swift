@@ -2,7 +2,7 @@
 //  ReviewViewModel.swift
 //  Tango
 //
-//  Created by Yoshida Yuya on 2022/09/18.
+//  Created by Yoshida Yuya on 2022/10/02.
 //
 
 import Foundation

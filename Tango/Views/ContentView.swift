@@ -22,10 +22,10 @@ struct ContentView: View {
                         .tabItem {
                             Label("Home", systemImage: "house")
                         }
-                    AccountScreen()
-                        .tabItem {
-                            Label("Account", systemImage: "person.crop.circle.fill")
-                        }
+//                    AccountScreen()
+//                        .tabItem {
+//                            Label("Account", systemImage: "person.crop.circle.fill")
+//                        }
                     TangoScreen()
                         .tabItem {
                             Label("tango", systemImage: "textformat")
@@ -36,6 +36,7 @@ struct ContentView: View {
                 SignInScreen()
             }
         }
+        
     }
 }
 

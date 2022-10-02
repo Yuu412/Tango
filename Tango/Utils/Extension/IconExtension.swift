@@ -8,6 +8,15 @@
 import SwiftUI
 
 extension Image {
+    // 画面右上に表示されるアイコン
+    func topRightIconExtension() -> some View {
+        self
+            .resizable()
+            .scaledToFit()
+            .frame(width: 25)
+            .foregroundColor(BackgroundColor.blueBackground)
+    }
+    
     // リスト形式の左端に表示されるアイコン
     func listBlueIconExtension() -> some View {
         self
