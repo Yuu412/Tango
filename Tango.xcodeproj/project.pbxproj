@@ -52,6 +52,7 @@
 		CA99535328E94A3A00C3B55B /* HomeActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99535228E94A3A00C3B55B /* HomeActivityView.swift */; };
 		CA99535528E94C0600C3B55B /* HomeActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99535428E94C0600C3B55B /* HomeActivityViewModel.swift */; };
 		CA99535728E96DBE00C3B55B /* ActivityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99535628E96DBE00C3B55B /* ActivityRepository.swift */; };
+		CA99535A28E99BA100C3B55B /* TypeConversionFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99535928E99BA100C3B55B /* TypeConversionFunction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		CA99535228E94A3A00C3B55B /* HomeActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeActivityView.swift; sourceTree = "<group>"; };
 		CA99535428E94C0600C3B55B /* HomeActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeActivityViewModel.swift; sourceTree = "<group>"; };
 		CA99535628E96DBE00C3B55B /* ActivityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRepository.swift; sourceTree = "<group>"; };
+		CA99535928E99BA100C3B55B /* TypeConversionFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeConversionFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,7 +200,9 @@
 		CA21059028E33C9A00DD2573 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				CA670CFA28D5A6CE00D848EB /* Common.swift */,
 				CA21059128E33CD900DD2573 /* ImageConstants.swift */,
+				CA670CFE28D5ADBC00D848EB /* Color.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -248,11 +252,10 @@
 		CA670CF428D5A15C00D848EB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CA99535828E99B7700C3B55B /* Function */,
 				CA21059028E33C9A00DD2573 /* Constant */,
 				CA21056F28DF182F00DD2573 /* Extension */,
 				CA670D0A28D5CAD400D848EB /* Modifier */,
-				CA670CFA28D5A6CE00D848EB /* Common.swift */,
-				CA670CFE28D5ADBC00D848EB /* Color.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -347,6 +350,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		CA99535828E99B7700C3B55B /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				CA99535928E99BA100C3B55B /* TypeConversionFunction.swift */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -439,6 +450,7 @@
 				CA21058F28E1A39400DD2573 /* ReferenceRepository.swift in Sources */,
 				CA21056228DED68900DD2573 /* RegisterSentenceView.swift in Sources */,
 				CA21056528DEE50E00DD2573 /* RegisterViewModel.swift in Sources */,
+				CA99535A28E99BA100C3B55B /* TypeConversionFunction.swift in Sources */,
 				CA99535328E94A3A00C3B55B /* HomeActivityView.swift in Sources */,
 				CA21054C28DDCA7100DD2573 /* SignInScreen.swift in Sources */,
 				CA21056028DED63600DD2573 /* RegisterTangoView.swift in Sources */,
