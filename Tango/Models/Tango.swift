@@ -26,10 +26,10 @@ struct Tangos {
     }
     
     // Activityのグラフ表示用の構造体
-    struct TangoAmount {
+    struct TangoAmount: Identifiable, Equatable{
         var id = UUID()
         var date: Date
-        var amount: Double
+        var amount: Int
     }
     
 }

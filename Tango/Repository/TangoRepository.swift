@@ -29,35 +29,34 @@ final class TangoRepository: ObservableObject {
         
         db.collection(table).whereField("userID", isEqualTo: user.uid).getDocuments{ snapshot, error in
             // Check for errors
-            if error == nil {
-                // No errors
+            if error != nil {
+                // Handle the error
+            }
+            // No errors
+            
+            if let snapshot = snapshot {
                 
-                if let snapshot = snapshot {
-                    
-                    // Update the list property in the main thread
-                    DispatchQueue.main.async {
-                        // Get all the documents and create Tangos
-                        self.tangos = snapshot.documents.map { doc in
-                            //Create a Tango item for each document returned
-                            return Tangos.Tango(
-                                id: doc.documentID,
-                                userID: doc["userID"] as? String ?? "",
-                                enName: doc["enName"] as? String ?? "",
-                                jaName: doc["jaName"] as? String ?? "",
-                                enSentence: doc["enSentence"] as? String ?? "",
-                                jaSentence: doc["jaSentence"] as? String ?? "",
-                                referenceID: doc["referenceID"] as? String ?? "",
-                                memo1: doc["memo1"] as? String ?? "",
-                                memo2: doc["memo2"] as? String ?? "",
-                                createdDate: doc["createdDate"] as? String ?? "",
-                                createdAt: doc["createdAt"] as? Date ?? Date(),
-                                updatedAt: doc["updatedAt"] as? Date ?? Date()
-                            )
-                        }
+                // Update the list property in the main thread
+                DispatchQueue.main.async {
+                    // Get all the documents and create Tangos
+                    self.tangos = snapshot.documents.map { doc in
+                        //Create a Tango item for each document returned
+                        return Tangos.Tango(
+                            id: doc.documentID,
+                            userID: doc["userID"] as? String ?? "",
+                            enName: doc["enName"] as? String ?? "",
+                            jaName: doc["jaName"] as? String ?? "",
+                            enSentence: doc["enSentence"] as? String ?? "",
+                            jaSentence: doc["jaSentence"] as? String ?? "",
+                            referenceID: doc["referenceID"] as? String ?? "",
+                            memo1: doc["memo1"] as? String ?? "",
+                            memo2: doc["memo2"] as? String ?? "",
+                            createdDate: doc["createdDate"] as? String ?? "",
+                            createdAt: doc["createdAt"] as? Date ?? Date(),
+                            updatedAt: doc["updatedAt"] as? Date ?? Date()
+                        )
                     }
                 }
-            } else {
-                // Handle the error
             }
         }
     }

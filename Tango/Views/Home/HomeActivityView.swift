@@ -41,17 +41,30 @@ struct HomeActivityCardPart: View {
     @ObservedObject var activityVM = HomeActivityViewModel()
     
     var body: some View {
-        
         VStack {
-            HStack {
+            HStack(alignment: .top) {
                 Text("9月24日")
                     .modifier(PageHeadline())
                 Spacer()
+                VStack (alignment: .leading) {
+                    Text("Total")
+                        .font(.system(Font.TextStyle.footnote, weight: .bold))
+                        .foregroundColor(TextColor.light)
+                    HStack(alignment: .bottom) {
+                        Text(String(activityVM.tangoAmountsSum))
+                            .font(.system(Font.TextStyle.largeTitle, weight: .bold))
+                        Text("tango")
+                            .font(.system(Font.TextStyle.footnote, weight: .bold))
+                            .foregroundColor(TextColor.light)
+                    }
+                }
+                .padding(.horizontal, 10)
             }
             .padding()
             
             // グラフ表示部分
             HomeActivityGraphPart()
+                .environmentObject(HomeActivityViewModel())
             
             // 各種ボタン表示部分
             HomeActivityButtonPart()
@@ -63,24 +76,25 @@ struct HomeActivityCardPart: View {
 
 // 活動記録グラフ部分
 struct HomeActivityGraphPart: View {
-    @ObservedObject var activityVM = HomeActivityViewModel()
+    @EnvironmentObject var activityVM: HomeActivityViewModel
     
     var body: some View {
-        // グラフ表示部分
-        Chart(activityVM.dateArray) { data in
-            LineMark(
-                x: .value("Name", data.date),
-                y: .value("Amount", data.profit)
-            )
-            .foregroundStyle(BackgroundColor.blueBackground.gradient)
-            .lineStyle(StrokeStyle(lineWidth: 2))
-            .interpolationMethod(.catmullRom)
-        }
-        .frame(height: FrameSize().height * 0.15)
-        .chartYScale(domain: .automatic(includesZero: false), range: .plotDimension(padding: 5))
-        .padding(.horizontal, 20)
-        .chartXAxis(Visibility.hidden)
-        .chartYAxis(Visibility.hidden)
+            // グラフ表示部分
+            Chart(activityVM.tangoAmounts) { data in
+                LineMark(
+                    x: .value("Name", data.date),
+                    y: .value("Amount", data.amount)
+                )
+                .foregroundStyle(BackgroundColor.blueBackground.gradient)
+                .lineStyle(StrokeStyle(lineWidth: 2))
+                .interpolationMethod(.catmullRom)
+            }
+            .frame(height: FrameSize().height * 0.15)
+            .chartYScale(domain: .automatic(includesZero: false), range: .plotDimension(padding: 10))
+            .padding(.horizontal, 20)
+            .chartXAxis(Visibility.hidden)
+            .chartYAxis(Visibility.hidden)
+        
     }
 }
 
