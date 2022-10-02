@@ -62,4 +62,26 @@ extension Image {
                     .position(x: CoverImageConstants.idealWidth, y: 0)
             )
     }
+    
+    // 「登録済み単語」に表示されるカバー画像
+    func registeredCoverImageExtension() -> some View {
+        return self
+            .resizable()
+            .scaledToFit()
+            .frame(
+                idealWidth: RegisteredCoverImageConstants.idealWidth,
+                maxWidth: RegisteredCoverImageConstants.maxWidth,
+                minHeight: RegisteredCoverImageConstants.height,
+                idealHeight: RegisteredCoverImageConstants.height,
+                maxHeight: RegisteredCoverImageConstants.height,
+                alignment: .center
+            )
+            .aspectRatio(contentMode: .fill)
+            .clipped()
+            .background(BackgroundColor.background)
+            .overlay(
+                RoundedRectangle(cornerRadius: 7.5)
+                    .stroke(BackgroundColor.darkBackground, lineWidth: 2)
+            )
+    }
 }

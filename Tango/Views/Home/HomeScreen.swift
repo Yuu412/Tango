@@ -24,6 +24,8 @@ struct HomeScreen: View{
 
 // ヘッダーセクション
 struct HomeHeaderSection: View {
+    @State var isPresentingModal: Bool = false
+    
     var body: some View{
         HStack {
             VStack(alignment: .leading) {
@@ -32,144 +34,23 @@ struct HomeHeaderSection: View {
                 Text("Summary")
                     .modifier(PageTitle())
             }
-            .padding()
+            
             Spacer()
-        }
-    }
-}
-
-// 活動記録セクション
-struct HomeActivitySection: View {
-    // 表示フラグ
-    @State private var isRegisterTangoView: Bool = false
-    @State private var isReviewView: Bool = false
-    
-    var body: some View{
-        VStack {
-            // sectionタイトル
-            HStack {
-                Text("Activity")
-                    .modifier(SectionTitle())
-                Spacer()
-            }
-            .padding()
             
-            // カード部分
-            VStack {
-                HStack {
-                    Text("9月24日")
-                        .modifier(PageHeadline())
-                    Spacer()
-                }
-                .padding()
+            // アカウント遷移部
+            Button(action: {
+                isPresentingModal.toggle()
                 
-                // グラフ表示部分
-                Image("activityGraphExample")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: FrameSize().width * 0.9)
-                
-                // 遷移ボタン部分
-                HStack {
-                    // 単語を追加するViewに遷移
-                    Button(action: {
-                        isRegisterTangoView.toggle()
-                    }, label: {
-                        HStack {
-                            Image(systemName: "textformat")
-                            Text("tangoを追加")
-                                .modifier(ButtonTitle())
-                        }
-                    })
-                    .modifier(HalfButton(color: BackgroundColor.lightBackground))
-                    .sheet(isPresented: $isRegisterTangoView) {
-                        SelectReferenceView()
-                            .environmentObject(ReferenceViewModel())
-                    }
-                    
-                    
-                    Spacer()
-                    
-                    // 復習を開始するViewに遷移
-                    Button(action: {
-                        isReviewView.toggle()
-                    }, label: {
-                        HStack {
-                            Image(systemName: "play.fill")
-                            Text("復習")
-                                .modifier(ButtonTitle())
-                        }
-                    })
-                    .modifier(HalfButton(color: BackgroundColor.blueBackground))
-                    .sheet(isPresented: $isReviewView) {
-                        ReviewScreen()
-                            .environmentObject(ReviewViewModel())
-                    }
-                }
-                .padding()
+            }, label: {
+                Image(systemName: "person.crop.circle")
+                    .topRightIconExtension()
+            })
+            .sheet(isPresented: $isPresentingModal) {
+                AccountScreen()
+                    .environmentObject(RegisterViewModel())
             }
-            .modifier(CardView())
         }
-    }
-}
-
-// 参考書一覧セクション
-struct HomeContentsSection: View {
-    var body: some View{
-        VStack {
-            // sectionタイトル
-            HStack {
-                Text("Contents")
-                    .modifier(SectionTitle())
-                Spacer()
-            }
-            .padding()
-            
-            // カード部分
-            VStack {
-                // 参考書表示部分
-                
-                HStack {
-                    Spacer()
-                    Image("TOEIC1")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: FrameSize().width * 0.2)
-                    Spacer()
-                    Image("TOEIC2")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: FrameSize().width * 0.2)
-                    Spacer()
-                    Image("TOEIC3")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: FrameSize().width * 0.2)
-                    Spacer()
-                }
-                .padding(.top, 20)
-                
-                HStack {
-                    Spacer()
-                    Image("emptyBook")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: FrameSize().width * 0.2)
-                    Spacer()
-                    Image("emptyBook")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: FrameSize().width * 0.2)
-                    Spacer()
-                    Image("emptyBook")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: FrameSize().width * 0.2)
-                    Spacer()
-                }
-                .padding(.vertical, 20)
-            }
-            .modifier(CardView())
-        }
+        .padding()
+        
     }
 }

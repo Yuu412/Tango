@@ -10,7 +10,6 @@
 		CA21052C28D70A9D00DD2573 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA21052B28D70A9D00DD2573 /* GoogleService-Info.plist */; };
 		CA21052F28D70D7700DD2573 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CA21052E28D70D7700DD2573 /* FirebaseAnalytics */; };
 		CA21053128D70D7700DD2573 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA21053028D70D7700DD2573 /* FirebaseAnalyticsSwift */; };
-		CA21053328D71D5600DD2573 /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21053228D71D5600DD2573 /* ReviewViewModel.swift */; };
 		CA21053828D7240400DD2573 /* Tango.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21053728D7240400DD2573 /* Tango.swift */; };
 		CA21053B28D727F700DD2573 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CA21053A28D727F700DD2573 /* FirebaseFirestore */; };
 		CA21053D28D855B300DD2573 /* SwipeTangoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21053C28D855B300DD2573 /* SwipeTangoView.swift */; };
@@ -48,11 +47,15 @@
 		CA670CFF28D5ADBC00D848EB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670CFE28D5ADBC00D848EB /* Color.swift */; };
 		CA670D0E28D5D28A00D848EB /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA670D0D28D5D28A00D848EB /* ViewModifier.swift */; };
 		CA99534328E7D7BD00C3B55B /* ConfirmRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99534228E7D7BD00C3B55B /* ConfirmRegisterView.swift */; };
+		CA99534C28E946F300C3B55B /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99534B28E946F200C3B55B /* ReviewViewModel.swift */; };
+		CA99535128E949CF00C3B55B /* HomeContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99535028E949CF00C3B55B /* HomeContentsView.swift */; };
+		CA99535328E94A3A00C3B55B /* HomeActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99535228E94A3A00C3B55B /* HomeActivityView.swift */; };
+		CA99535528E94C0600C3B55B /* HomeActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99535428E94C0600C3B55B /* HomeActivityViewModel.swift */; };
+		CA99535728E96DBE00C3B55B /* ActivityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99535628E96DBE00C3B55B /* ActivityRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA21052B28D70A9D00DD2573 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CA21053228D71D5600DD2573 /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
 		CA21053728D7240400DD2573 /* Tango.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tango.swift; sourceTree = "<group>"; };
 		CA21053C28D855B300DD2573 /* SwipeTangoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTangoView.swift; sourceTree = "<group>"; };
 		CA21053E28D891F300DD2573 /* ReviewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewScreen.swift; sourceTree = "<group>"; };
@@ -89,6 +92,11 @@
 		CA670CFE28D5ADBC00D848EB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		CA670D0D28D5D28A00D848EB /* ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
 		CA99534228E7D7BD00C3B55B /* ConfirmRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmRegisterView.swift; sourceTree = "<group>"; };
+		CA99534B28E946F200C3B55B /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
+		CA99535028E949CF00C3B55B /* HomeContentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentsView.swift; sourceTree = "<group>"; };
+		CA99535228E94A3A00C3B55B /* HomeActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeActivityView.swift; sourceTree = "<group>"; };
+		CA99535428E94C0600C3B55B /* HomeActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeActivityViewModel.swift; sourceTree = "<group>"; };
+		CA99535628E96DBE00C3B55B /* ActivityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,9 +127,9 @@
 		CA21053428D71F1600DD2573 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				CA21056328DEE4F600DD2573 /* Register */,
+				CA99534F28E9483200C3B55B /* Home */,
+				CA99534E28E9474900C3B55B /* Tango */,
 				CA21055028DDE81D00DD2573 /* Auth */,
-				CA21053228D71D5600DD2573 /* ReviewViewModel.swift */,
 				CA21058728E0964100DD2573 /* ReferenceViewModel.swift */,
 			);
 			path = ViewModels;
@@ -181,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				CA21058C28E19C6400DD2573 /* TangoRepository.swift */,
+				CA99535628E96DBE00C3B55B /* ActivityRepository.swift */,
 				CA21058E28E1A39400DD2573 /* ReferenceRepository.swift */,
 			);
 			path = Repository;
@@ -274,6 +283,8 @@
 			children = (
 				CA21052828D6BA6600DD2573 /* Review */,
 				CA21054028D8923600DD2573 /* HomeScreen.swift */,
+				CA99535028E949CF00C3B55B /* HomeContentsView.swift */,
+				CA99535228E94A3A00C3B55B /* HomeActivityView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -309,6 +320,31 @@
 				CA21056A28DF157100DD2573 /* ButtonModifier.swift */,
 			);
 			path = Modifier;
+			sourceTree = "<group>";
+		};
+		CA99534A28E946D400C3B55B /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				CA99534B28E946F200C3B55B /* ReviewViewModel.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		CA99534E28E9474900C3B55B /* Tango */ = {
+			isa = PBXGroup;
+			children = (
+				CA21056328DEE4F600DD2573 /* Register */,
+			);
+			path = Tango;
+			sourceTree = "<group>";
+		};
+		CA99534F28E9483200C3B55B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CA99534A28E946D400C3B55B /* Review */,
+				CA99535428E94C0600C3B55B /* HomeActivityViewModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,10 +439,11 @@
 				CA21058F28E1A39400DD2573 /* ReferenceRepository.swift in Sources */,
 				CA21056228DED68900DD2573 /* RegisterSentenceView.swift in Sources */,
 				CA21056528DEE50E00DD2573 /* RegisterViewModel.swift in Sources */,
+				CA99535328E94A3A00C3B55B /* HomeActivityView.swift in Sources */,
 				CA21054C28DDCA7100DD2573 /* SignInScreen.swift in Sources */,
 				CA21056028DED63600DD2573 /* RegisterTangoView.swift in Sources */,
+				CA99535128E949CF00C3B55B /* HomeContentsView.swift in Sources */,
 				CA21053F28D891F300DD2573 /* ReviewScreen.swift in Sources */,
-				CA21053328D71D5600DD2573 /* ReviewViewModel.swift in Sources */,
 				CA21059228E33CD900DD2573 /* ImageConstants.swift in Sources */,
 				CA21053D28D855B300DD2573 /* SwipeTangoView.swift in Sources */,
 				CA21057128DF184600DD2573 /* IconExtension.swift in Sources */,
@@ -415,6 +452,7 @@
 				CA21054128D8923600DD2573 /* HomeScreen.swift in Sources */,
 				CA21056B28DF157100DD2573 /* ButtonModifier.swift in Sources */,
 				CA21058028E0275D00DD2573 /* ReferenceImagePicker.swift in Sources */,
+				CA99534C28E946F300C3B55B /* ReviewViewModel.swift in Sources */,
 				CA21053828D7240400DD2573 /* Tango.swift in Sources */,
 				CA670CE728D5A14E00D848EB /* TangoApp.swift in Sources */,
 				CA99534328E7D7BD00C3B55B /* ConfirmRegisterView.swift in Sources */,
@@ -422,6 +460,8 @@
 				CA21058828E0964100DD2573 /* ReferenceViewModel.swift in Sources */,
 				CA21057328DF1C1700DD2573 /* RegisterReferenceView.swift in Sources */,
 				CA21058428E050CC00DD2573 /* Reference.swift in Sources */,
+				CA99535728E96DBE00C3B55B /* ActivityRepository.swift in Sources */,
+				CA99535528E94C0600C3B55B /* HomeActivityViewModel.swift in Sources */,
 				CA21055228DDE9C900DD2573 /* SignInViewModel.swift in Sources */,
 				CA21058D28E19C6400DD2573 /* TangoRepository.swift in Sources */,
 				CA21056728DF0BD200DD2573 /* SelectReferenceTypeView.swift in Sources */,

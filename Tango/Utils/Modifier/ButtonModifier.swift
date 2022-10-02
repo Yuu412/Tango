@@ -52,3 +52,19 @@ struct HalfButton: ViewModifier {
             .cornerRadius(5)
     }
 }
+
+// カバー画像が左にあって、左右半分のボタン
+struct RightHalfButton: ViewModifier {
+    var color: Color
+    
+    func body(content: Content) -> some View {
+        content
+            .foregroundColor(TextColor.reverse)
+            .padding(.horizontal, 15)
+            .padding(.vertical, 7.5)
+            .frame(width: FrameSize().width / 4)
+            .background(color)
+            .cornerRadius(5)
+    }
+}
+

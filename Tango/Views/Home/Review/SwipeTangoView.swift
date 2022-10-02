@@ -36,12 +36,16 @@ struct SwipeTangoView: View {
                         .foregroundColor(Color.blue)
                         .padding(.bottom, 20)
                     
-                    Text(tango.enSentence)
-                        .font(.system(Font.TextStyle.callout))
+                    if !tango.enSentence.isEmpty {
+                        Text(tango.enSentence)
+                            .font(.system(Font.TextStyle.callout))
+                    }
                     
-                    Text(tango.jaSentence)
-                        .font(.system(Font.TextStyle.caption))
-                        .foregroundColor(TextColor.light)
+                    if !tango.jaSentence.isEmpty {
+                        Text(tango.jaSentence)
+                            .font(.system(Font.TextStyle.caption))
+                            .foregroundColor(TextColor.light)
+                    }
                     
                     Spacer()
                 }
