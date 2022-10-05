@@ -28,7 +28,7 @@ class ReviewViewModel: ObservableObject {
     func addGazeProgress(listCount: Int) {
         self.gazeProgress += 1 / Double(listCount)
         // 復習予定の全ての単語の終了時
-        if(self.gazeProgress >= 1){
+        if(self.gazeProgress > 0.95){
             self.finish()
         }
     }

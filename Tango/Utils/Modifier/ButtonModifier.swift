@@ -61,7 +61,7 @@ struct RightHalfButton: ViewModifier {
         content
             .foregroundColor(TextColor.reverse)
             .padding(.horizontal, 15)
-            .padding(.vertical, 7.5)
+            .padding(.vertical, 5)
             .frame(width: FrameSize().width / 4)
             .background(color)
             .cornerRadius(5)

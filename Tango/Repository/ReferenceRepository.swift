@@ -33,7 +33,13 @@ final class ReferenceRepository: ObservableObject {
     
     // Firebaseからの情報取得
     func getData() {
-        db.collection(table).getDocuments{ snapshot, error in
+        // ログインユーザーの取得
+        guard let user = Auth.auth().currentUser else {
+            print("need sign in")
+            return
+        }
+        
+        db.collection(table).whereField("userID", isEqualTo: user.uid).getDocuments{ snapshot, error in
             // Check for errors
             if error == nil && snapshot != nil{
                 // No errors

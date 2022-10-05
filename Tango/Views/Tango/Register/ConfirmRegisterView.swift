@@ -63,6 +63,7 @@ struct ConfirmTangoView: View {
                         .font(.system(Font.TextStyle.callout, weight: .bold))
                         .foregroundColor(TextColor.light)
                         .padding(.top, 2.5)
+                        .lineLimit(1)
                 }
                 Spacer()
             }
@@ -82,6 +83,7 @@ struct ConfirmTangoView: View {
                             .font(.system(Font.TextStyle.callout, weight: .bold))
                             .foregroundColor(TextColor.light)
                             .padding(.top, 2.5)
+                            .lineLimit(2)
                     }
                     Spacer()
                 }
@@ -102,6 +104,7 @@ struct ConfirmTangoView: View {
                             .font(.system(Font.TextStyle.callout, weight: .bold))
                             .foregroundColor(TextColor.light)
                             .padding(.top, 2.5)
+                            .lineLimit(2)
                     }
                     Spacer()
                 }

@@ -14,8 +14,6 @@ struct ReviewScreen: View{
     
     @EnvironmentObject var tangoVM: ReviewViewModel
     
-    var progressValue: Float = 0.2
-    
     var body: some View{
         
         ZStack {
