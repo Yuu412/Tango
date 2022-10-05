@@ -7,7 +7,6 @@
 // Parent: SelectReferenceTypeView
 
 import SwiftUI
-
 struct SelectReferenceView: View {
     
     @EnvironmentObject var registerVM: RegisterViewModel
@@ -90,8 +89,6 @@ struct SelectReferenceView: View {
                 .padding(.bottom, 20)
             }
         }
-        .frame(height: FrameSize().height * 0.2)
-        
     }
 }
 

@@ -12,13 +12,13 @@ struct HomeScreen: View{
     var body: some View{
         ScrollView {
             VStack {
-                Spacer().frame(height: FrameSize().height * 0.05)
                 HomeHeaderSection()
                 HomeActivitySection()
                 HomeContentsSection()
                 Spacer()
             }
         }
+        .padding(.top, 10)
     }
 }
 

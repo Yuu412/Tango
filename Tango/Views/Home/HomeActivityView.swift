@@ -101,7 +101,6 @@ struct HomeActivityGraphPart: View {
 // 各種ボタン表示部分
 struct HomeActivityButtonPart: View {
     // 表示フラグ
-    @State private var isRegisterTangoView: Bool = false
     @State private var isReviewView: Bool = false
     @State var isPresentingModal: Bool = false
     
