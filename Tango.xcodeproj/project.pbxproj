@@ -53,6 +53,8 @@
 		CA99535528E94C0600C3B55B /* HomeActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99535428E94C0600C3B55B /* HomeActivityViewModel.swift */; };
 		CA99535728E96DBE00C3B55B /* ActivityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99535628E96DBE00C3B55B /* ActivityRepository.swift */; };
 		CA99535A28E99BA100C3B55B /* TypeConversionFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99535928E99BA100C3B55B /* TypeConversionFunction.swift */; };
+		CA99536128EEF54700C3B55B /* TangoScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99536028EEF54700C3B55B /* TangoScreenViewModel.swift */; };
+		CA99536428EEF5F800C3B55B /* TangoScreenRepositry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99536328EEF5F800C3B55B /* TangoScreenRepositry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +101,8 @@
 		CA99535428E94C0600C3B55B /* HomeActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeActivityViewModel.swift; sourceTree = "<group>"; };
 		CA99535628E96DBE00C3B55B /* ActivityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRepository.swift; sourceTree = "<group>"; };
 		CA99535928E99BA100C3B55B /* TypeConversionFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeConversionFunction.swift; sourceTree = "<group>"; };
+		CA99536028EEF54700C3B55B /* TangoScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangoScreenViewModel.swift; sourceTree = "<group>"; };
+		CA99536328EEF5F800C3B55B /* TangoScreenRepositry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangoScreenRepositry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,7 @@
 		CA21058928E196FE00DD2573 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				CA99536228EEF5E300C3B55B /* Tango */,
 				CA21058C28E19C6400DD2573 /* TangoRepository.swift */,
 				CA99535628E96DBE00C3B55B /* ActivityRepository.swift */,
 				CA21058E28E1A39400DD2573 /* ReferenceRepository.swift */,
@@ -337,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				CA21056328DEE4F600DD2573 /* Register */,
+				CA99536028EEF54700C3B55B /* TangoScreenViewModel.swift */,
 			);
 			path = Tango;
 			sourceTree = "<group>";
@@ -356,6 +362,14 @@
 				CA99535928E99BA100C3B55B /* TypeConversionFunction.swift */,
 			);
 			path = Function;
+			sourceTree = "<group>";
+		};
+		CA99536228EEF5E300C3B55B /* Tango */ = {
+			isa = PBXGroup;
+			children = (
+				CA99536328EEF5F800C3B55B /* TangoScreenRepositry.swift */,
+			);
+			path = Tango;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,6 +471,7 @@
 				CA99535128E949CF00C3B55B /* HomeContentsView.swift in Sources */,
 				CA21053F28D891F300DD2573 /* ReviewScreen.swift in Sources */,
 				CA21059228E33CD900DD2573 /* ImageConstants.swift in Sources */,
+				CA99536128EEF54700C3B55B /* TangoScreenViewModel.swift in Sources */,
 				CA21053D28D855B300DD2573 /* SwipeTangoView.swift in Sources */,
 				CA21057128DF184600DD2573 /* IconExtension.swift in Sources */,
 				CA21058228E03C9F00DD2573 /* CoverImageExtension.swift in Sources */,
@@ -477,6 +492,7 @@
 				CA21055228DDE9C900DD2573 /* SignInViewModel.swift in Sources */,
 				CA21058D28E19C6400DD2573 /* TangoRepository.swift in Sources */,
 				CA21056728DF0BD200DD2573 /* SelectReferenceTypeView.swift in Sources */,
+				CA99536428EEF5F800C3B55B /* TangoScreenRepositry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

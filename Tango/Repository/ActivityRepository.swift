@@ -33,6 +33,7 @@ final class ActivityRepository: ObservableObject {
         
         db.collection(table).whereField("userID", isEqualTo: user.uid).getDocuments {
             snapshot, error in
+            
             // Check for errors
             if error != nil {
                 // Handle the error

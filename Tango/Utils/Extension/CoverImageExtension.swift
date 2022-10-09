@@ -81,7 +81,7 @@ extension Image {
             .background(BackgroundColor.background)
             .overlay(
                 RoundedRectangle(cornerRadius: 7.5)
-                    .stroke(BackgroundColor.darkBackground, lineWidth: 2)
+                    .stroke(BackgroundColor.darkBackground, lineWidth: 5)
             )
     }
 }

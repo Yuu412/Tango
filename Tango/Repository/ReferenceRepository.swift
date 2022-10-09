@@ -33,6 +33,9 @@ final class ReferenceRepository: ObservableObject {
     
     // Firebaseからの情報取得
     func getData() {
+        // defaultのカバー画像
+        var coverImage: UIImage = self.defaultImage
+        
         // ログインユーザーの取得
         guard let user = Auth.auth().currentUser else {
             print("need sign in")
@@ -54,53 +57,33 @@ final class ReferenceRepository: ObservableObject {
                     // Create a reference to the file you want to download
                     let fileRef = storageRef.child(imagePath)
                     
-                    fileRef.getData(maxSize: 5 * 1024 * 1024) { data, error in
+                    fileRef.getData(maxSize: 5 * 1024 * 1024) { imageData, error in
                         // Check for errors
+                        if error != nil {
+                            // Handle the error
+                        }
                         
-                        if error == nil && data != nil {
-                            
-                            // 明日確認
-//                            let coverImage: UIImage
-//                            if let image = UIImage(data: data!){
-//                                coverImage = image
-//                            } else {
-//                                coverImage = self.defaultImage
-//                            }
+                        guard let unwrapImageData = imageData else {
+                            // Handle the error
+                            return
+                        }
                         
-                            
-                            
-                            
-                            
-                            // Create a UIImage
-                            if let image = UIImage(data: data!) {
-                                DispatchQueue.main.async {
-                                    self.references.append(
-                                        References.Reference(
-                                            id: doc.documentID,
-                                            userID: doc["userID"] as? String ?? "",
-                                            title: doc["title"] as? String ?? "",
-                                            label: doc["label"] as? String ?? "",
-                                            image: image,
-                                            createdAt: doc["createdAt"] as? Date ?? Date(),
-                                            updatedAt: doc["updatedAt"] as? Date ?? Date()
-                                        )
-                                    )
-                                }
-                            } else {
-                                DispatchQueue.main.async {
-                                    self.references.append(
-                                        References.Reference(
-                                            id: doc.documentID,
-                                            userID: doc["userID"] as? String ?? "",
-                                            title: doc["title"] as? String ?? "",
-                                            label: doc["label"] as? String ?? "",
-                                            image: self.defaultImage,
-                                            createdAt: doc["createdAt"] as? Date ?? Date(),
-                                            updatedAt: doc["updatedAt"] as? Date ?? Date()
-                                        )
-                                    )
-                                }
-                            }
+                        if let image = UIImage(data: unwrapImageData){
+                            coverImage = image
+                        }
+                        
+                        DispatchQueue.main.async {
+                            self.references.append(
+                                References.Reference(
+                                    id: doc.documentID,
+                                    userID: doc["userID"] as? String ?? "",
+                                    title: doc["title"] as? String ?? "",
+                                    label: doc["label"] as? String ?? "",
+                                    image: coverImage,
+                                    createdAt: doc["createdAt"] as? Date ?? Date(),
+                                    updatedAt: doc["updatedAt"] as? Date ?? Date()
+                                )
+                            )
                         }
                     }
                 }
