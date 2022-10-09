@@ -72,24 +72,25 @@ struct RegisterHeaderSection: View {
 
 // ヘッダーセクション
 struct ListTangoSection: View {
-    @ObservedObject var referenceVM = ReferenceViewModel()
+    @ObservedObject var tangoScreenVM = TangoScreenViewModel()
     
-    // 表示フラグ
     @State private var isReviewView: Bool = false
     @State var isPresentingModal: Bool = false
+    //@State private var isExpand = false
     
     var body: some View{
         VStack(alignment: .leading) {
-            ForEach(referenceVM.references) { reference in
+            ForEach(tangoScreenVM.references) { reference in
                 // 参照元ごとのカード
-                VStack (spacing: 5){
+                VStack {
                     HStack {
-                        // カバー画像の場合
+                        // カード左半分（カバー画像部分）
                         Image(uiImage: reference.image)
                             .registeredCoverImageExtension()
                         
                         Spacer()
                         
+                        // カード右半分（タイトル・遷移ボタン部分）
                         VStack(alignment: .leading) {
                             // 参考書のタイトル
                             Text(reference.title)
@@ -104,17 +105,46 @@ struct ListTangoSection: View {
                         .frame(width: FrameSize().width * 0.6)
                     }
                     
-                    HStack {
-                        Image(systemName: "chevron.down")
-                        Text("単語一覧を表示")
-                            .foregroundColor(TextColor.blue)
-                            .font(.system(Font.TextStyle.callout, weight: .bold))
-                    }
-                    .foregroundColor(TextColor.blue)
-                    .padding(.top, 10)
-                    
+                    // 開閉式の単語一覧部分
+                    DisclosureGroup(
+                        content: {
+                            Divider().frame(width: FrameSize().width * 0.8)
+                            
+                            ForEach(0 ..< reference.tangos.count, id: \.self) { index in
+                                HStack {
+                                    VStack {
+                                        Text("\(index + 1)")
+                                            .foregroundColor(TextColor.light)
+                                            .frame(width: FrameSize().width * 0.1)
+                                        Divider()
+                                            .foregroundColor(BackgroundColor.darkBackground)
+                                    }
+                                    
+                                    VStack(alignment: .leading) {
+                                        Text("\(reference.tangos[index].enName) ( \(reference.tangos[index].jaName) )")
+                                            .font(.system(Font.TextStyle.callout))
+                                        Divider()
+                                    }
+                                    .frame(width: FrameSize().width * 0.7)
+                                }
+                            }
+                        },
+                        label: {
+                            Text("単語一覧を表示")
+                                .foregroundColor(TextColor.blue)
+                                .font(.system(Font.TextStyle.footnote, weight: .bold))
+                                .padding(.vertical, 5)
+                        }
+                    )
+                    .frame(width: FrameSize().width * 0.3)
+                    .padding(.vertical, 5)
                 }
-                .padding()
+                .padding(EdgeInsets(
+                    top: 15,
+                    leading: 20,
+                    bottom: 5,
+                    trailing: 15
+                ))
                 .modifier(CardView())
             }
         }

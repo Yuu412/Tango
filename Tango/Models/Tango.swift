@@ -32,4 +32,18 @@ struct Tangos {
         var amount: Int
     }
     
+    // 登録済み単語の参照元リストに表示用の構造体
+//    struct ListedTango: Identifiable {
+//        var id: String
+//        var userID: String
+//        var enName: String
+//        var jaName: String
+//        var referenceID: String
+//    }
+    struct ListedTango: Identifiable {
+        var id: String
+        var enName: String
+        var jaName: String
+    }
+    
 }
