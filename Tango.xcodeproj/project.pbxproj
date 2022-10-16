@@ -55,6 +55,7 @@
 		CA99535A28E99BA100C3B55B /* TypeConversionFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99535928E99BA100C3B55B /* TypeConversionFunction.swift */; };
 		CA99536128EEF54700C3B55B /* TangoScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99536028EEF54700C3B55B /* TangoScreenViewModel.swift */; };
 		CA99536428EEF5F800C3B55B /* TangoScreenRepositry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA99536328EEF5F800C3B55B /* TangoScreenRepositry.swift */; };
+		CAC06F4928FBBFA600387892 /* GoogleService-dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAC06F4828FBBFA600387892 /* GoogleService-dev-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +104,7 @@
 		CA99535928E99BA100C3B55B /* TypeConversionFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeConversionFunction.swift; sourceTree = "<group>"; };
 		CA99536028EEF54700C3B55B /* TangoScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangoScreenViewModel.swift; sourceTree = "<group>"; };
 		CA99536328EEF5F800C3B55B /* TangoScreenRepositry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangoScreenRepositry.swift; sourceTree = "<group>"; };
+		CAC06F4828FBBFA600387892 /* GoogleService-dev-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-dev-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,16 +234,17 @@
 		CA670CE528D5A14E00D848EB /* Tango */ = {
 			isa = PBXGroup;
 			children = (
-				CA21058928E196FE00DD2573 /* Repository */,
 				CA21054F28DDE7F900DD2573 /* Tango.entitlements */,
+				CA21058928E196FE00DD2573 /* Repository */,
 				CA21053428D71F1600DD2573 /* ViewModels */,
 				CA670CF728D5A1F000D848EB /* Views */,
 				CA670CF528D5A16300D848EB /* Models */,
 				CA670CF428D5A15C00D848EB /* Utils */,
+				CA670CEC28D5A14F00D848EB /* Preview Content */,
 				CA670CE628D5A14E00D848EB /* TangoApp.swift */,
 				CA670CEA28D5A14F00D848EB /* Assets.xcassets */,
 				CA21052B28D70A9D00DD2573 /* GoogleService-Info.plist */,
-				CA670CEC28D5A14F00D848EB /* Preview Content */,
+				CAC06F4828FBBFA600387892 /* GoogleService-dev-Info.plist */,
 			);
 			path = Tango;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA670CEE28D5A14F00D848EB /* Preview Assets.xcassets in Resources */,
+				CAC06F4928FBBFA600387892 /* GoogleService-dev-Info.plist in Resources */,
 				CA670CEB28D5A14F00D848EB /* Assets.xcassets in Resources */,
 				CA21052C28D70A9D00DD2573 /* GoogleService-Info.plist in Resources */,
 			);
